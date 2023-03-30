@@ -28,6 +28,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.james.rescueat.databinding.ActivityMainBinding;
 
+import org.w3c.dom.Text;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -40,11 +42,19 @@ public class MainMenu extends AppCompatActivity {
     private static final String key_url = "imageURL";
 
     BottomNavigationView bottomNavigationView;
+    TextView tvHello;
+    String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
+
+        Bundle bundle = getIntent().getExtras();
+        name = bundle.getString("name");
+
+        tvHello = findViewById(R.id.tvHello);
+        tvHello.setText("Hello, " + name.substring(0, name.indexOf(" ")));
 
         bottomNavigationView = findViewById(R.id.bottom_navigator);
         bottomNavigationView.setSelectedItemId(R.id.home);
