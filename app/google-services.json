@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "898366348589",
+    "firebase_url": "https://rescueat-945d5-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "rescueat-945d5",
+    "storage_bucket": "rescueat-945d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898366348589:android:30ac10a55e5bd503a247a4",
+        "android_client_info": {
+          "package_name": "com.example.rescueat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898366348589-8gtkhq5983ihu91k45d8rdulrr9dhk9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_xn-dV8N3DItzUuealCaT-r6BlULcWMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898366348589-8gtkhq5983ihu91k45d8rdulrr9dhk9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898366348589:android:32d62ed179bb42fba247a4",
+        "android_client_info": {
+          "package_name": "com.james.rescueat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898366348589-8gtkhq5983ihu91k45d8rdulrr9dhk9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_xn-dV8N3DItzUuealCaT-r6BlULcWMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898366348589-8gtkhq5983ihu91k45d8rdulrr9dhk9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898366348589:android:1cf21f1fb285880ea247a4",
+        "android_client_info": {
+          "package_name": "com.ve3.rescueat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898366348589-8gtkhq5983ihu91k45d8rdulrr9dhk9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_xn-dV8N3DItzUuealCaT-r6BlULcWMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898366348589-8gtkhq5983ihu91k45d8rdulrr9dhk9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
