@@ -56,7 +56,11 @@ public class MainActivity extends AppCompatActivity {
                                     name = document.get("name").toString();
                                     if (pwd.equals(pwdInput.getText().toString()) && email.equals(emailInput.getText().toString())) {
                                         Toast.makeText(getApplicationContext(), "Welcome, " + name + "!", Toast.LENGTH_SHORT).show();
-                                        toMainMenu(view);
+                                        Intent main = new Intent(getApplicationContext(), MainMenu.class);
+                                        Bundle bundle = new Bundle();
+                                        bundle.putString("name", name);
+                                        main.putExtras(bundle);
+                                        startActivity(main);
                                     } else {
                                         Toast.makeText(getApplicationContext(), "Passwords do not match", Toast.LENGTH_SHORT).show();
                                     }
@@ -70,10 +74,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
-    }
-    public void toMainMenu(View view) {
-        Intent main = new Intent(getApplicationContext(), MainMenu.class);
-        startActivity(main);
     }
     public void toRegister(View view) {
         Intent intent = new Intent(getApplicationContext(), Register.class);
