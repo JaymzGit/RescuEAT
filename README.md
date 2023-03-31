@@ -4,22 +4,19 @@ RescueEat is a mobile application developed to reduce food waste and fight again
 # Getting Started
 To get started with RescueEat, follow these steps:
 
-Prerequisites
+# Prerequisites
 Android Studio
 Android SDK
 Firebase Account
-Installation
-Clone the repository from GitHub to your local machine:
-bash
-Copy code
-git clone https://github.com/username/RescueEat.git
-Open the project in Android Studio and sync the Gradle files.
 
-Create a Firebase project and add the Firebase configuration file to the app.
+# Installation
+1. Clone the repository from GitHub to your local machine:
+```git clone https://github.com/username/RescueEat.git```
+2. Open the project in Android Studio and sync the Gradle files.
+3. Create a Firebase project and add the Firebase configuration file to the app.
+4. Run the app on an emulator or physical device.
 
-Run the app on an emulator or physical device.
-
-Usage
+# Usage
 On the home screen, select "Donate Food" or "Get Food" depending on your needs.
 
 If you are donating food, enter the details of the food item, including its name, quantity, and expiry date. You can also upload a photo of the item.
@@ -28,24 +25,17 @@ If you are looking for food, enter your location and search for available food i
 
 Select a food item to view its details and contact the donor.
 
-Contributing
+# Contributing
 We welcome contributions to RescueEat! To contribute, please follow these steps:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your forked repository.
+5. Submit a pull request to merge your changes into the main branch.
 
-Fork the repository.
-
-Create a new branch for your feature or bug fix.
-
-Make your changes and commit them.
-
-Push your changes to your forked repository.
-
-Submit a pull request to merge your changes into the main branch.
-
-Credits
+# Credits
 RescueEat was developed by the following team members:
-
-John Doe
-Jane Smith
-Bob Johnson
-License
-RescueEat is licensed under the MIT License. See LICENSE for more information.
+Kalla Deveshwara Rao - Dev235
+James Khor Xuan Hao - JaymzGit
+Suthareesanan A/L Saravanan - ShananSaravanan
+Darwin A/L Radhakrishnan - Winz-10
