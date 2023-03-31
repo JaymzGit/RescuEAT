@@ -35,7 +35,7 @@ We welcome contributions to RescueEat! To contribute, please follow these steps:
 
 # Credits
 RescueEat was developed by the following team members:
-Kalla Deveshwara Rao - Dev235
-James Khor Xuan Hao - JaymzGit
-Suthareesanan A/L Saravanan - ShananSaravanan
-Darwin A/L Radhakrishnan - Winz-10
+1. Kalla Deveshwara Rao - Dev235
+2. James Khor Xuan Hao - JaymzGit
+3. Suthareesanan A/L Saravanan - ShananSaravanan
+4. Darwin A/L Radhakrishnan - Winz-10
