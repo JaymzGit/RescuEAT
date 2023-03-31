@@ -45,7 +45,7 @@ public class Post extends AppCompatActivity {
     FirebaseStorage storage = FirebaseStorage.getInstance();
     StorageReference storageRef, imageRef;
     UploadTask uploadTask;
-    String title, caption, documentId, newDocumentId;
+    String title, caption, documentId, newDocumentId, name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,12 +55,17 @@ public class Post extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottom_navigator);
         bottomNavigationView.setSelectedItemId(R.id.add);
 
+        Bundle bundle = getIntent().getExtras();
+        name = bundle.getString("name");
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@androidx.annotation.NonNull MenuItem item) {
                 switch(item.getItemId()){
                     case R.id.home:
                         Intent i = new Intent(getApplicationContext(), MainMenu.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("name", name);
+                        i.putExtras(bundle);
                         startActivity(i);
                         return true;
                 }
@@ -110,12 +115,18 @@ public class Post extends AppCompatActivity {
                                 }
                             });
                     Intent i = new Intent(getApplicationContext(), MainMenu.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("name", name);
+                    i.putExtras(bundle);
                     startActivity(i);
                     Toast.makeText(getApplicationContext(), "Successfully uploaded!", Toast.LENGTH_SHORT).show();
                 } else {
                     // To upload text only to DB
                     send_to_db(title, caption, null);
                     Intent i = new Intent(getApplicationContext(), MainMenu.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("name", name);
+                    i.putExtras(bundle);
                     startActivity(i);
                     Toast.makeText(getApplicationContext(), "Successfully uploaded!", Toast.LENGTH_SHORT).show();
                 }
@@ -127,27 +138,12 @@ public class Post extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
                 intent.setType("image/*");
+                Bundle bundle = new Bundle();
+                bundle.putString("name", name);
+                intent.putExtras(bundle);
                 startActivityForResult(intent, 1);
             }
         });
-    }
-
-    @Override
-    protected void onStart() {
-        bottomNavigationView.setSelectedItemId(R.id.add);
-        super.onStart();
-    }
-
-    @Override
-    protected void onResume() {
-        bottomNavigationView.setSelectedItemId(R.id.add);
-        super.onResume();
-    }
-
-    @Override
-    protected void onRestart() {
-        bottomNavigationView.setSelectedItemId(R.id.add);
-        super.onRestart();
     }
 
     //To get images from cam
