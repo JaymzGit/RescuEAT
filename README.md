@@ -5,9 +5,9 @@ RescueEat is a mobile application developed to reduce food waste and fight again
 To get started with RescueEat, follow these steps:
 
 # Prerequisites
-Android Studio
-Android SDK
-Firebase Account
+1. Android Studio
+2. Android SDK
+3. Firebase Account
 
 # Installation
 1. Clone the repository from GitHub to your local machine:
